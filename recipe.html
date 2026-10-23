@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f1e7">
+<title>الوصفة | سُفرة</title>
+<meta name="description" content="وصفة بيتية من سُفرة بمكونات واضحة وخطوات سهلة، مع إمكانية تغيير عدد الأفراد ووضع طبخ تفاعلي.">
+<link rel="canonical" href="https://mohammadmansy.github.io/sofra/recipes.html">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="سُفرة">
+<meta property="og:title" content="الوصفة | سُفرة">
+<meta property="og:description" content="وصفة بيتية بمكونات واضحة وخطوات سهلة من سُفرة.">
+<meta property="og:url" content="https://mohammadmansy.github.io/sofra/">
+<meta property="og:image" content="https://mohammadmansy.github.io/sofra/img/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.replace('no-js','js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="سُفرة — الصفحة الرئيسية">
+      <span class="brand-mark">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="27" r="14" stroke="currentColor" stroke-width="1.6"/><path d="M24 13c4-6 11-6.5 13.5-5-1.5 6-6 9-10.5 8.5" fill="currentColor" opacity=".8"/><path d="M15 27h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand-text">سُفرة<em>sufra</em></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+      <a href="index.html">الرئيسية</a>
+      <a href="recipes.html" class="is-active" aria-current="page">الوصفات</a>
+      <a href="about.html">من نحن</a>
+      <a href="about.html#contact">تواصل</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="icon-btn" href="recipes.html?focus=search" data-search-link aria-label="ابحث عن وصفة">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"/><path d="m16.5 16.5 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </a>
+      <a class="icon-btn saved-btn" href="recipes.html?fav=1" data-saved-link data-saved-wrap aria-label="الوصفات المحفوظة">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7.5-4.4-7.5-9.6A4.4 4.4 0 0 1 12 7.4a4.4 4.4 0 0 1 7.5 3C19.5 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        <span class="saved-count" data-saved-count>0</span>
+      </a>
+      <a href="recipes.html" class="btn btn-solid btn-small header-cta">كل الوصفات</a>
+      <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="recipe-page" id="recipePage">
+    <div class="container">
+      <nav class="crumbs" aria-label="مسار الصفحة">
+        <a href="index.html">الرئيسية</a>
+        <span class="sep">/</span>
+        <a href="recipes.html">الوصفات</a>
+        <span class="sep">/</span>
+        <span class="current" id="crumbTitle">وصفة</span>
+      </nav>
+
+      <div id="recipeContent" aria-busy="true">
+        <article>
+          <header class="recipe-hero">
+            <div class="recipe-hero-media">
+              <img id="recipeImage" src="img/featured.jpg" alt="" width="1200" height="900">
+              <span class="media-tag" id="recipeCategory">وصفة</span>
+            </div>
+
+            <div class="recipe-hero-copy">
+              <span class="eyebrow"><i class="eyebrow-dot"></i> <span id="recipeKicker">من مطبخ سُفرة</span></span>
+              <h1 id="recipeTitle">وصفة من سُفرة</h1>
+              <p class="recipe-summary" id="recipeSummary">بنجهّز الوصفة…</p>
+
+              <div class="recipe-rating">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3Z" fill="currentColor"/></svg>
+                <strong id="recipeRating">4.8</strong>
+                <span id="recipeReviews">من 0 تقييم</span>
+              </div>
+
+              <div class="recipe-meta-row">
+                <span>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="13" r="8" stroke="currentColor" stroke-width="1.6"/><path d="M12 9v4l2.5 2M9 3h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <span id="metaMinutes">20</span> دقيقة
+                </span>
+                <span>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12a8 8 0 1 0 8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 4v4H8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span id="metaDifficulty">سهلة</span>
+                </span>
+                <span>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5M16 5.5c1.7.3 2.8 1.6 2.8 3.2S17.7 11.7 16 12M17.5 14.4c1.7.6 2.8 2.2 3.1 4.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <span id="metaServings">فردان</span>
+                </span>
+                <span>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 20V9l7-5 7 5v11H5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 20v-6h6v6" stroke="currentColor" stroke-width="1.6"/></svg>
+                  <span id="metaCategory">وصفة</span>
+                </span>
+              </div>
+
+              <div class="recipe-actions">
+                <button class="action-btn" type="button" data-save="" data-label="" id="saveRecipe" aria-pressed="false">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7.5-4.4-7.5-9.6A4.4 4.4 0 0 1 12 7.4a4.4 4.4 0 0 1 7.5 3C19.5 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+                  <span class="save-label">احفظ الوصفة</span>
+                </button>
+                <button class="action-btn" type="button" id="shareBtn">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="18" cy="5" r="2.5" stroke="currentColor" stroke-width="1.6"/><circle cx="6" cy="12" r="2.5" stroke="currentColor" stroke-width="1.6"/><circle cx="18" cy="19" r="2.5" stroke="currentColor" stroke-width="1.6"/><path d="m8.2 10.8 7.6-4.3M8.2 13.2l7.6 4.3" stroke="currentColor" stroke-width="1.6"/></svg>
+                  شارك الوصفة
+                </button>
+                <button class="action-btn" type="button" id="printBtn">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 8V4h10v4M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M7 14h10v6H7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                  اطبع
+                </button>
+              </div>
+            </div>
+          </header>
+
+          <div class="detail-layout">
+            <aside>
+              <div class="ingredients-card">
+                <div class="detail-card-title">
+                  <h2>المكونات</h2>
+                  <span id="ingredientsCount"></span>
+                </div>
+
+                <div class="servings-control">
+                  <span>عدد الأفراد</span>
+                  <div class="servings-stepper">
+                    <button class="servings-btn" type="button" id="servingsMinus" aria-label="تقليل عدد الأفراد">−</button>
+                    <span class="servings-value" id="servingsValue">2</span>
+                    <button class="servings-btn" type="button" id="servingsPlus" aria-label="زيادة عدد الأفراد">+</button>
+                  </div>
+                </div>
+
+                <p class="ingredients-note">الكميات بتتظبط تلقائيًا حسب عدد الأفراد.</p>
+                <div class="ingredients-list" id="ingredientsList"></div>
+
+                <div class="cook-cta">
+                  <span class="cook-cta-icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3v8M9 3v8M7.5 11v10M16 3c-1.5 2-2 4-2 6.5 0 2 1 3.5 2 3.5v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <div>
+                    <p>محتاجة تتابعي خطوة بخطوة؟</p>
+                    <button type="button" id="startCook">
+                      افتحي وضع الطبخ
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m0 0 6-6m-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <div class="detail-main">
+              <div class="story-block">
+                <span>حكاية الطبق</span>
+                <p id="recipeStory"></p>
+              </div>
+
+              <h2>طريقة التحضير</h2>
+              <p class="intro-note">خطوات مكتوبة على مهل. اقرأيها الأول، وبعدين ابدأي.</p>
+              <div class="steps-list" id="stepsList"></div>
+
+              <div class="tip-card">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.6.4 1.1 1.2 1.1 2.2h5c0-1 .5-1.8 1.1-2.2A6 6 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div>
+                  <strong>نصيحة سُفرة</strong>
+                  <p id="tipText"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <section class="related-wrap" id="relatedWrap" hidden>
+          <div class="related-head">
+            <h2>ممكن يعجبك كمان</h2>
+            <a href="recipes.html">
+              كل الوصفات
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m0 0 6-6m-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="recipe-grid" id="relatedGrid"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-not-found" id="notFound" hidden>
+    <div class="container">
+      <span class="eyebrow"><i class="eyebrow-dot"></i> الوصفة مش هنا</span>
+      <h1>يمكن الطبق خلص قبل ما توصل</h1>
+      <p>الوصفة اللي بتدوري عليها مش موجودة أو الرابط قديم. ابدأي من كل الوصفات، وأكيد هتلاقي حاجة تعجبك.</p>
+      <a href="recipes.html" class="btn btn-solid">كل الوصفات</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand" aria-label="سُفرة">
+        <span class="brand-mark">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="27" r="14" stroke="currentColor" stroke-width="1.6"/><path d="M24 13c4-6 11-6.5 13.5-5-1.5 6-6 9-10.5 8.5" fill="currentColor" opacity=".8"/><path d="M15 27h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-text">سُفرة<em>sufra</em></span>
+      </a>
+      <p>مطبخ صغير، وصفات بسيطة، ولمة على قد القلب.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="روابط الفوتر">
+      <div>
+        <h4>استكشف</h4>
+        <a href="recipes.html">كل الوصفات</a>
+        <a href="recipes.html?cat=فطار">الفطار</a>
+        <a href="recipes.html?cat=غداء">الغدا</a>
+        <a href="recipes.html?cat=حلويات">الحلويات</a>
+      </div>
+      <div>
+        <h4>سُفرة</h4>
+        <a href="about.html">من نحن</a>
+        <a href="about.html#contact">تواصل</a>
+        <a href="https://github.com/mohammadmansy" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </nav>
+
+    <div class="footer-cta">
+      <h4>عندك وصفة تتحب؟</h4>
+      <p>ابعتلنا وصفتك وصورة الطبق، وممكن تنشر على السفرة.</p>
+      <a href="about.html#contact" class="btn btn-ghost btn-small">ابعتلنا</a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© <span data-year>2026</span> سُفرة. معمولة على مهل في مطبخ صغير.</p>
+    <p class="footer-signature">طبخ بهدوء، أكل بمزاج.</p>
+  </div>
+</footer>
+
+<div class="cook" id="cook" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cookTitle">
+  <div class="cook-panel">
+    <div class="cook-top">
+      <strong id="cookTitle">وضع الطبخ</strong>
+      <button class="cook-close" type="button" id="closeCook" aria-label="إغلاق وضع الطبخ">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+
+    <div class="cook-progress"><span id="cookProgress"></span></div>
+    <span class="cook-step-label" id="cookStepLabel">الخطوة 1</span>
+    <p class="cook-text" id="cookText"></p>
+
+    <div class="cook-timer">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="13" r="8" stroke="currentColor" stroke-width="1.7"/><path d="M12 9v4l2.5 2M9 3h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      <span class="cook-timer-display" id="timerDisplay">10:00</span>
+      <button type="button" id="timerToggle">ابدأ</button>
+      <button class="timer-reset" type="button" id="timerReset" aria-label="إعادة ضبط المؤقت">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.7L4 8.6M4 4v4.6h4.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <div class="cook-nav">
+      <div class="cook-actions">
+        <button class="action-btn" type="button" id="prevStep">السابق</button>
+        <button class="btn btn-solid btn-small" type="button" id="nextStep">الخطوة التالية</button>
+      </div>
+      <div class="cook-dots" id="cookDots" aria-hidden="true"></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<noscript>
+  <div class="container" style="padding: 24px; text-align: center;">محتاج تفعّل JavaScript عشان تشوف تفاصيل الوصفة.</div>
+</noscript>
+
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/recipe.js"></script>
+</body>
+</html>

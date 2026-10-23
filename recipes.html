@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f1e7">
+<title>كل الوصفات | سُفرة</title>
+<meta name="description" content="اتفرجي على كل وصفات سُفرة: فطار، غدا، عشا، وحلويات. ابحثي بالمكوّن أو اختاري التصنيف، واحفظي اللي يعجبك.">
+<link rel="canonical" href="https://mohammadmansy.github.io/sofra/recipes.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="سُفرة">
+<meta property="og:title" content="كل الوصفات | سُفرة">
+<meta property="og:description" content="فطار، غدا، عشا، وحلويات. ابحثي بالمكوّن أو اختاري التصنيف.">
+<meta property="og:url" content="https://mohammadmansy.github.io/sofra/recipes.html">
+<meta property="og:image" content="https://mohammadmansy.github.io/sofra/img/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.replace('no-js','js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="سُفرة — الصفحة الرئيسية">
+      <span class="brand-mark">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="27" r="14" stroke="currentColor" stroke-width="1.6"/><path d="M24 13c4-6 11-6.5 13.5-5-1.5 6-6 9-10.5 8.5" fill="currentColor" opacity=".8"/><path d="M15 27h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand-text">سُفرة<em>sufra</em></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+      <a href="index.html">الرئيسية</a>
+      <a href="recipes.html" class="is-active" aria-current="page">الوصفات</a>
+      <a href="about.html">من نحن</a>
+      <a href="about.html#contact">تواصل</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="icon-btn" href="recipes.html" data-search-link aria-label="ابحث عن وصفة">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"/><path d="m16.5 16.5 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </a>
+      <a class="icon-btn saved-btn" href="recipes.html?fav=1" data-saved-link data-saved-wrap aria-label="الوصفات المحفوظة">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7.5-4.4-7.5-9.6A4.4 4.4 0 0 1 12 7.4a4.4 4.4 0 0 1 7.5 3C19.5 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        <span class="saved-count" data-saved-count>0</span>
+      </a>
+      <a href="#archiveToolbar" class="btn btn-solid btn-small header-cta">ابحث</a>
+      <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div>
+        <span class="eyebrow"><i class="eyebrow-dot"></i> البوفيه مفتوح</span>
+        <h1>كل الوصفات<br><span class="accent-word">في مكان واحد</span></h1>
+        <p class="lead">دوّري بالمكوّن اللي عندك، أو اختاري التصنيف على مزاجك. القليل بيطعم كتير لما يتعمل بهدوء.</p>
+      </div>
+      <div class="page-badge reveal">
+        <strong id="totalCount">12</strong>
+        <span>وصفة مجرّبة وجاهزة على السفرة</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section archive-section">
+    <div class="container">
+      <div class="archive-toolbar reveal" id="archiveToolbar">
+        <label class="search-field" for="searchInput">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"/><path d="m16.5 16.5 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <input type="search" id="searchInput" placeholder="دوّري على وصفة أو مكوّن… مثلًا: ليمون" autocomplete="off" aria-label="ابحثي في الوصفات">
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+
+        <div class="chips" role="group" aria-label="فلترة حسب التصنيف">
+          <button class="chip is-active" type="button" data-cat="all" aria-pressed="true">الكل <span data-cat-count="all"></span></button>
+          <button class="chip" type="button" data-cat="فطار" aria-pressed="false">فطار <span data-cat-count="فطار"></span></button>
+          <button class="chip" type="button" data-cat="غداء" aria-pressed="false">غدا <span data-cat-count="غداء"></span></button>
+          <button class="chip" type="button" data-cat="عشاء" aria-pressed="false">عشا <span data-cat-count="عشاء"></span></button>
+          <button class="chip" type="button" data-cat="حلويات" aria-pressed="false">حلويات <span data-cat-count="حلويات"></span></button>
+        </div>
+
+        <div class="sort-wrap">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <select id="sortSelect" class="sort-select" aria-label="ترتيب الوصفات">
+            <option value="default">مقترح</option>
+            <option value="fastest">الأسرع أولًا</option>
+            <option value="rating">الأعلى تقييمًا</option>
+          </select>
+        </div>
+
+        <button class="chip chip-saved" type="button" id="savedFilter" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7.5-4.4-7.5-9.6A4.4 4.4 0 0 1 12 7.4a4.4 4.4 0 0 1 7.5 3C19.5 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          المحفوظات
+          <span data-saved-count>0</span>
+        </button>
+      </div>
+
+      <div class="archive-meta">
+        <p id="resultsCount" aria-live="polite"></p>
+        <button class="clear-filters" type="button" id="clearFilters" hidden>مسح الفلاتر</button>
+      </div>
+
+      <div class="recipe-grid" id="recipesGrid"></div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <span class="empty-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="36" r="18" stroke="currentColor" stroke-width="1.6"/><path d="M20 36h24M32 24c4-6 10-7 14-6-2 7-7 10-13 9" fill="currentColor" opacity=".35"/></svg>
+        </span>
+        <h2>مفيش وصفة بالشكل ده</h2>
+        <p>جرّبي كلمة أبسط، أو امسحي الفلاتر وابدأي من الأول.</p>
+        <button class="btn btn-solid btn-small" type="button" id="resetEmpty">اعرضي كل الوصفات</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand" aria-label="سُفرة">
+        <span class="brand-mark">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="27" r="14" stroke="currentColor" stroke-width="1.6"/><path d="M24 13c4-6 11-6.5 13.5-5-1.5 6-6 9-10.5 8.5" fill="currentColor" opacity=".8"/><path d="M15 27h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-text">سُفرة<em>sufra</em></span>
+      </a>
+      <p>مطبخ صغير، وصفات بسيطة، ولمة على قد القلب.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="روابط الفوتر">
+      <div>
+        <h4>استكشف</h4>
+        <a href="recipes.html">كل الوصفات</a>
+        <a href="recipes.html?cat=فطار">الفطار</a>
+        <a href="recipes.html?cat=غداء">الغدا</a>
+        <a href="recipes.html?cat=حلويات">الحلويات</a>
+      </div>
+      <div>
+        <h4>سُفرة</h4>
+        <a href="about.html">من نحن</a>
+        <a href="about.html#contact">تواصل</a>
+        <a href="https://github.com/mohammadmansy" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </nav>
+
+    <div class="footer-cta">
+      <h4>عندك وصفة تتحب؟</h4>
+      <p>ابعتلنا وصفتك وصورة الطبق، وممكن تنشر على السفرة.</p>
+      <a href="about.html#contact" class="btn btn-ghost btn-small">ابعتلنا</a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© <span data-year>2026</span> سُفرة. معمولة على مهل في مطبخ صغير.</p>
+    <p class="footer-signature">طبخ بهدوء، أكل بمزاج.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/recipes.js"></script>
+</body>
+</html>

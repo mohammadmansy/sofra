@@ -1,0 +1,20 @@
+{
+  "name": "سُفرة — وصفات بيتية",
+  "short_name": "سُفرة",
+  "description": "وصفات بيتية مجرّبة بخطوات واضحة ومكونات بسيطة.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f1e7",
+  "theme_color": "#f6f1e7",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mohammadmansy.github.io/sofra/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://mohammadmansy.github.io/sofra/recipes.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mohammadmansy.github.io/sofra/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url><loc>https://mohammadmansy.github.io/sofra/recipe.html?id=shakshuka</loc><priority>0.8</priority></url>
+  <url><loc>https://mohammadmansy.github.io/sofra/recipe.html?id=pancakes</loc><priority>0.8</priority></url>
+  <url><loc>https://mohammadmansy.github.io/sofra/recipe.html?id=avocado-toast</loc><priority>0.8</priority></url>
+  <url><loc>https://mohammadmansy.github.io/sofra/recipe.html?id=med-salad</loc><priority>0.8</priority></url>
+  <url><loc>https://mohammadmansy.github.io/sofra/recipe.html?id=quinoa-bowl</loc><priority>0.8</priority></url>
+  <url><loc>https://mohammadmansy.github.io/sofra/recipe.html?id=lemon-chicken</loc><priority>0.8</priority></url>
+  <url><loc>https://mohammadmansy.github.io/sofra/recipe.html?id=lemon-pasta</loc><priority>0.8</priority></url>
+  <url><loc>https://mohammadmansy.github.io/sofra/recipe.html?id=salmon</loc><priority>0.9</priority></url>
+  <url><loc>https://mohammadmansy.github.io/sofra/recipe.html?id=pizza</loc><priority>0.8</priority></url>
+  <url><loc>https://mohammadmansy.github.io/sofra/recipe.html?id=lentil-soup</loc><priority>0.8</priority></url>
+  <url><loc>https://mohammadmansy.github.io/sofra/recipe.html?id=lemon-cake</loc><priority>0.8</priority></url>
+  <url><loc>https://mohammadmansy.github.io/sofra/recipe.html?id=brownie</loc><priority>0.8</priority></url>
+</urlset>

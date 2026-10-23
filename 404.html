@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f1e7">
+<title>الصفحة مش موجودة | سُفرة</title>
+<meta name="description" content="الصفحة اللي بتدوري عليها مش موجودة. ابدأي من وصفات سُفرة أو ارجعي للرئيسية.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.replace('no-js','js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="سُفرة — الصفحة الرئيسية">
+      <span class="brand-mark">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="27" r="14" stroke="currentColor" stroke-width="1.6"/><path d="M24 13c4-6 11-6.5 13.5-5-1.5 6-6 9-10.5 8.5" fill="currentColor" opacity=".8"/><path d="M15 27h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand-text">سُفرة<em>sufra</em></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+      <a href="index.html">الرئيسية</a>
+      <a href="recipes.html">الوصفات</a>
+      <a href="about.html">من نحن</a>
+      <a href="about.html#contact">تواصل</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="icon-btn" href="recipes.html?focus=search" data-search-link aria-label="ابحث عن وصفة">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"/><path d="m16.5 16.5 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </a>
+      <a class="icon-btn saved-btn" href="recipes.html?fav=1" data-saved-link data-saved-wrap aria-label="الوصفات المحفوظة">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7.5-4.4-7.5-9.6A4.4 4.4 0 0 1 12 7.4a4.4 4.4 0 0 1 7.5 3C19.5 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        <span class="saved-count" data-saved-count>0</span>
+      </a>
+      <a href="recipes.html" class="btn btn-solid btn-small header-cta">كل الوصفات</a>
+      <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="error-hero">
+  <div class="container">
+    <svg class="error-plate" viewBox="0 0 160 120" fill="none" aria-hidden="true">
+      <ellipse cx="80" cy="96" rx="58" ry="12" stroke="currentColor" stroke-width="1.4" opacity=".35"/>
+      <circle cx="80" cy="58" r="42" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="80" cy="58" r="30" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6"/>
+      <path d="M40 56c20-10 40-10 60 0M40 64c20 10 40 10 60 0" stroke="currentColor" stroke-width="1" opacity=".35"/>
+      <path d="M112 30c9-9 21-9 26-4-5 9-15 13-23 10" fill="currentColor" opacity=".25"/>
+    </svg>
+    <div class="error-code">4<span>0</span>4</div>
+    <h1>الطبق ده مش على السفرة</h1>
+    <p>الصفحة اللي بتدوري عليها اتشالت أو الرابط قديم. ارجعي للرئيسية، أو ابدأي من الوصفات على طول.</p>
+    <div class="error-actions">
+      <a href="index.html" class="btn btn-solid">الصفحة الرئيسية</a>
+      <a href="recipes.html" class="btn btn-ghost">كل الوصفات</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-bottom">
+    <p>© <span data-year>2026</span> سُفرة. معمولة على مهل في مطبخ صغير.</p>
+    <p class="footer-signature">طبخ بهدوء، أكل بمزاج.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
